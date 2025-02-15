@@ -5,6 +5,8 @@ VisualStudioVersion = 17.8.34330.188
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "WHHS_TSA_Software_Development_2024-2025", "WHHS_TSA_Software_Development_2024-2025\WHHS_TSA_Software_Development_2024-2025.vbproj", "{F567B159-249E-4F92-A1AB-5111A86257F9}"
 EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "DropletFramework", "DropletFramework\DropletFramework.vbproj", "{BA3DD226-331D-40F4-B8BC-4E453EC02948}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{F567B159-249E-4F92-A1AB-5111A86257F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F567B159-249E-4F92-A1AB-5111A86257F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F567B159-249E-4F92-A1AB-5111A86257F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA3DD226-331D-40F4-B8BC-4E453EC02948}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA3DD226-331D-40F4-B8BC-4E453EC02948}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA3DD226-331D-40F4-B8BC-4E453EC02948}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA3DD226-331D-40F4-B8BC-4E453EC02948}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
