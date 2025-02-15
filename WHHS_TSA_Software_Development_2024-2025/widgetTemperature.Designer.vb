@@ -60,6 +60,7 @@ Partial Class widgetTemperature
         Me.BackColor = System.Drawing.Color.Transparent
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.lblTemperature)
+        Me.DoubleBuffered = True
         Me.MinimumSize = New System.Drawing.Size(256, 256)
         Me.Name = "widgetTemperature"
         Me.Size = New System.Drawing.Size(256, 256)

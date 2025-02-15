@@ -133,7 +133,7 @@ Partial Class ui_sidebar
         Me.icoSettings.Location = New System.Drawing.Point(0, 248)
         Me.icoSettings.Margin = New System.Windows.Forms.Padding(0)
         Me.icoSettings.Name = "icoSettings"
-        Me.icoSettings.Size = New System.Drawing.Size(173, 52)
+        Me.icoSettings.Size = New System.Drawing.Size(200, 52)
         Me.icoSettings.TabIndex = 0
         Me.icoSettings.TabStop = False
         '
@@ -152,7 +152,7 @@ Partial Class ui_sidebar
         Me.Controls.Add(Me.icoSettings)
         Me.DoubleBuffered = True
         Me.Name = "ui_sidebar"
-        Me.Size = New System.Drawing.Size(173, 300)
+        Me.Size = New System.Drawing.Size(200, 300)
         CType(Me.icoWidgets, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.icoIrrigation, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.icoHome, System.ComponentModel.ISupportInitialize).EndInit()

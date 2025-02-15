@@ -50,6 +50,7 @@ Partial Class widgetTime
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Transparent
         Me.Controls.Add(Me.lblTime)
+        Me.DoubleBuffered = True
         Me.MinimumSize = New System.Drawing.Size(256, 256)
         Me.Name = "widgetTime"
         Me.Size = New System.Drawing.Size(256, 256)

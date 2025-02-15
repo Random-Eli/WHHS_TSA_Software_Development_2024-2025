@@ -135,6 +135,12 @@
     <Compile Include="Widgets.vb">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="WidgetSelection.Designer.vb">
+      <DependentUpon>WidgetSelection.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WidgetSelection.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="widgetTemperature.Designer.vb">
       <DependentUpon>widgetTemperature.vb</DependentUpon>
     </Compile>
@@ -172,6 +178,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="WidgetOverlay.resx">
       <DependentUpon>WidgetOverlay.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WidgetSelection.resx">
+      <DependentUpon>WidgetSelection.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="widgetTemperature.resx">
       <DependentUpon>widgetTemperature.vb</DependentUpon>
@@ -239,6 +248,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\move.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\weather.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
