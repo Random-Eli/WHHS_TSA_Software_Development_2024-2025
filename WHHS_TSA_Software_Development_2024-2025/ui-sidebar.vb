@@ -62,4 +62,9 @@
     Private Sub icoHome_Click(sender As Object, e As EventArgs) Handles icoHome.Click
 
     End Sub
+
+    Private Sub icoWidgets_Click(sender As Object, e As EventArgs) Handles icoWidgets.Click
+        DropletApp.showHomePage()
+        DropletApp.editWidgets()
+    End Sub
 End Class

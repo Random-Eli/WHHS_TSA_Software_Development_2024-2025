@@ -4,4 +4,13 @@ Public Class DropletApp
     Private Sub DropletApp_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
     End Sub
+
+    Public Sub showHomePage()
+        Home.Show()
+    End Sub
+
+    Public Sub editWidgets()
+        Home.editWidgets()
+    End Sub
+
 End Class

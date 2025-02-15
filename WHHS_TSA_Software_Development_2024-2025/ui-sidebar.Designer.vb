@@ -150,6 +150,7 @@ Partial Class ui_sidebar
         Me.Controls.Add(Me.lblHome)
         Me.Controls.Add(Me.icoHome)
         Me.Controls.Add(Me.icoSettings)
+        Me.DoubleBuffered = True
         Me.Name = "ui_sidebar"
         Me.Size = New System.Drawing.Size(173, 300)
         CType(Me.icoWidgets, System.ComponentModel.ISupportInitialize).EndInit()

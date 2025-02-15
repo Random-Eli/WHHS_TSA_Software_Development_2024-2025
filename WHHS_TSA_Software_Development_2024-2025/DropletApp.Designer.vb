@@ -23,27 +23,26 @@ Partial Class DropletApp
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(DropletApp))
-        Me.Ui_sidebar3 = New WHHS_TSA_Software_Development_2024_2025.ui_sidebar()
-        Me.Home2 = New WHHS_TSA_Software_Development_2024_2025.Home()
+        Me.Home = New WHHS_TSA_Software_Development_2024_2025.Home()
+        Me.Ui_sidebar = New WHHS_TSA_Software_Development_2024_2025.ui_sidebar()
         Me.SuspendLayout()
         '
-        'Ui_sidebar3
+        'Home
         '
-        Me.Ui_sidebar3.BackColor = System.Drawing.Color.FromArgb(CType(CType(21, Byte), Integer), CType(CType(22, Byte), Integer), CType(CType(23, Byte), Integer))
-        Me.Ui_sidebar3.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Ui_sidebar3.Location = New System.Drawing.Point(0, 0)
-        Me.Ui_sidebar3.Name = "Ui_sidebar3"
-        Me.Ui_sidebar3.Size = New System.Drawing.Size(52, 450)
-        Me.Ui_sidebar3.TabIndex = 0
+        Me.Home.BackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(38, Byte), Integer), CType(CType(39, Byte), Integer))
+        Me.Home.Location = New System.Drawing.Point(52, 0)
+        Me.Home.Name = "Home"
+        Me.Home.Size = New System.Drawing.Size(748, 450)
+        Me.Home.TabIndex = 1
         '
-        'Home2
+        'Ui_sidebar
         '
-        Me.Home2.BackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(38, Byte), Integer), CType(CType(39, Byte), Integer))
-        Me.Home2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Home2.Location = New System.Drawing.Point(52, 0)
-        Me.Home2.Name = "Home2"
-        Me.Home2.Size = New System.Drawing.Size(748, 450)
-        Me.Home2.TabIndex = 1
+        Me.Ui_sidebar.BackColor = System.Drawing.Color.FromArgb(CType(CType(21, Byte), Integer), CType(CType(22, Byte), Integer), CType(CType(23, Byte), Integer))
+        Me.Ui_sidebar.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Ui_sidebar.Location = New System.Drawing.Point(0, 0)
+        Me.Ui_sidebar.Name = "Ui_sidebar"
+        Me.Ui_sidebar.Size = New System.Drawing.Size(52, 450)
+        Me.Ui_sidebar.TabIndex = 0
         '
         'DropletApp
         '
@@ -51,8 +50,9 @@ Partial Class DropletApp
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(38, Byte), Integer), CType(CType(39, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Controls.Add(Me.Home2)
-        Me.Controls.Add(Me.Ui_sidebar3)
+        Me.Controls.Add(Me.Home)
+        Me.Controls.Add(Me.Ui_sidebar)
+        Me.DoubleBuffered = True
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MinimumSize = New System.Drawing.Size(800, 400)
         Me.Name = "DropletApp"
@@ -61,11 +61,6 @@ Partial Class DropletApp
 
     End Sub
 
-    Friend WithEvents Ui_sidebar1 As ui_sidebar
     Friend WithEvents Ui_sidebar As ui_sidebar
-    Friend WithEvents Home1 As Home
-    Friend WithEvents Ui_sidebar2 As ui_sidebar
     Friend WithEvents Home As Home
-    Friend WithEvents Ui_sidebar3 As ui_sidebar
-    Friend WithEvents Home2 As Home
 End Class

@@ -123,6 +123,12 @@
     <Compile Include="ui-sidebar.vb">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="WidgetOverlay.Designer.vb">
+      <DependentUpon>WidgetOverlay.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WidgetOverlay.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="Widgets.Designer.vb">
       <DependentUpon>Widgets.vb</DependentUpon>
     </Compile>
@@ -133,6 +139,12 @@
       <DependentUpon>widgetTemperature.vb</DependentUpon>
     </Compile>
     <Compile Include="widgetTemperature.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="widgetTime.Designer.vb">
+      <DependentUpon>widgetTime.vb</DependentUpon>
+    </Compile>
+    <Compile Include="widgetTime.vb">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="widgetWeather.Designer.vb">
@@ -158,8 +170,14 @@
     <EmbeddedResource Include="ui-sidebar.resx">
       <DependentUpon>ui-sidebar.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="WidgetOverlay.resx">
+      <DependentUpon>WidgetOverlay.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="widgetTemperature.resx">
       <DependentUpon>widgetTemperature.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="widgetTime.resx">
+      <DependentUpon>widgetTime.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="widgetWeather.resx">
       <DependentUpon>widgetWeather.vb</DependentUpon>
@@ -209,6 +227,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\widget-background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\temperature.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\remove.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\move.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
