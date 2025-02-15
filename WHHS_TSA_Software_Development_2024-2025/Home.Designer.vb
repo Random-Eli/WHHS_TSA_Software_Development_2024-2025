@@ -28,9 +28,9 @@ Partial Class Home
         'WidgetTemperature1
         '
         Me.WidgetTemperature1.BackColor = System.Drawing.Color.Transparent
-        Me.WidgetTemperature1.Location = New System.Drawing.Point(44, 39)
+        Me.WidgetTemperature1.Location = New System.Drawing.Point(128, 29)
         Me.WidgetTemperature1.Name = "WidgetTemperature1"
-        Me.WidgetTemperature1.Size = New System.Drawing.Size(438, 277)
+        Me.WidgetTemperature1.Size = New System.Drawing.Size(282, 235)
         Me.WidgetTemperature1.TabIndex = 0
         '
         'Home

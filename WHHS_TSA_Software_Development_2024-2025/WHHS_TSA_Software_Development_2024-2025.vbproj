@@ -135,6 +135,12 @@
     <Compile Include="widgetTemperature.vb">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="widgetWeather.Designer.vb">
+      <DependentUpon>widgetWeather.vb</DependentUpon>
+    </Compile>
+    <Compile Include="widgetWeather.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="DropletApp.resx">
@@ -154,6 +160,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="widgetTemperature.resx">
       <DependentUpon>widgetTemperature.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="widgetWeather.resx">
+      <DependentUpon>widgetWeather.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
