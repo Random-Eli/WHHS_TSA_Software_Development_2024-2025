@@ -22,16 +22,28 @@ Partial Class Home
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Me.WidgetTemperature1 = New WHHS_TSA_Software_Development_2024_2025.widgetTemperature()
         Me.SuspendLayout()
+        '
+        'WidgetTemperature1
+        '
+        Me.WidgetTemperature1.BackColor = System.Drawing.Color.Transparent
+        Me.WidgetTemperature1.Location = New System.Drawing.Point(44, 39)
+        Me.WidgetTemperature1.Name = "WidgetTemperature1"
+        Me.WidgetTemperature1.Size = New System.Drawing.Size(438, 277)
+        Me.WidgetTemperature1.TabIndex = 0
         '
         'Home
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(38, Byte), Integer), CType(CType(39, Byte), Integer))
+        Me.Controls.Add(Me.WidgetTemperature1)
         Me.Name = "Home"
         Me.Size = New System.Drawing.Size(802, 484)
         Me.ResumeLayout(False)
 
     End Sub
+
+    Friend WithEvents WidgetTemperature1 As widgetTemperature
 End Class

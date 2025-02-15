@@ -129,6 +129,12 @@
     <Compile Include="Widgets.vb">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="widgetTemperature.Designer.vb">
+      <DependentUpon>widgetTemperature.vb</DependentUpon>
+    </Compile>
+    <Compile Include="widgetTemperature.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="DropletApp.resx">
@@ -145,6 +151,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ui-sidebar.resx">
       <DependentUpon>ui-sidebar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="widgetTemperature.resx">
+      <DependentUpon>widgetTemperature.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -188,6 +197,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Droplet_Icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\widget-background.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
