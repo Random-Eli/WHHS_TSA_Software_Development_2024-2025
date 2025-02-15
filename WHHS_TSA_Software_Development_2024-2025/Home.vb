@@ -20,6 +20,7 @@
                 tempOverlay.Location = New Point(ctl.Location.X - 32, ctl.Location.Y)
                 tempOverlay.Size = New Size(ctl.Size.Width + 64, ctl.Size.Height + 32)
                 tempOverlay.BringToFront()
+                tempOverlay.Widget = ctl
                 Me.Controls.Add(tempOverlay)
             End If
         Next

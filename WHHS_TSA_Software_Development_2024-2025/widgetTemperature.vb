@@ -1,4 +1,5 @@
 ﻿Public Class widgetTemperature
+
     Private Sub widgetTemperature_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
     End Sub
