@@ -111,6 +111,26 @@ Namespace My.Resources
         End Property
         
         '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+        '''</summary>
+        Friend ReadOnly Property Droplet_Icon__Transparent() As System.Drawing.Icon
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Droplet_Icon__Transparent", resourceCulture)
+                Return CType(obj,System.Drawing.Icon)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property Droplet_Icon__Transparent1() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Droplet_Icon__Transparent1", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
         Friend ReadOnly Property home() As System.Drawing.Bitmap
@@ -176,6 +196,16 @@ Namespace My.Resources
         Friend ReadOnly Property setting_32() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("setting_32", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property size() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("size", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property

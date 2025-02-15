@@ -22,11 +22,25 @@ Partial Class WidgetOverlay
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.icoRemove = New System.Windows.Forms.PictureBox()
         Me.icoMove = New System.Windows.Forms.PictureBox()
-        CType(Me.icoRemove, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.icoRemove = New System.Windows.Forms.PictureBox()
+        Me.icoResize = New System.Windows.Forms.PictureBox()
         CType(Me.icoMove, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.icoRemove, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.icoResize, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
+        '
+        'icoMove
+        '
+        Me.icoMove.Dock = System.Windows.Forms.DockStyle.Right
+        Me.icoMove.Image = Global.WHHS_TSA_Software_Development_2024_2025.My.Resources.Resources.move
+        Me.icoMove.Location = New System.Drawing.Point(320, 0)
+        Me.icoMove.MaximumSize = New System.Drawing.Size(32, 32)
+        Me.icoMove.Name = "icoMove"
+        Me.icoMove.Size = New System.Drawing.Size(32, 32)
+        Me.icoMove.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.icoMove.TabIndex = 1
+        Me.icoMove.TabStop = False
         '
         'icoRemove
         '
@@ -40,32 +54,37 @@ Partial Class WidgetOverlay
         Me.icoRemove.TabIndex = 0
         Me.icoRemove.TabStop = False
         '
-        'icoMove
+        'icoResize
         '
-        Me.icoMove.Dock = System.Windows.Forms.DockStyle.Right
-        Me.icoMove.Image = Global.WHHS_TSA_Software_Development_2024_2025.My.Resources.Resources.move
-        Me.icoMove.Location = New System.Drawing.Point(118, 0)
-        Me.icoMove.MaximumSize = New System.Drawing.Size(32, 32)
-        Me.icoMove.Name = "icoMove"
-        Me.icoMove.Size = New System.Drawing.Size(32, 32)
-        Me.icoMove.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.icoMove.TabIndex = 1
-        Me.icoMove.TabStop = False
+        Me.icoResize.Dock = System.Windows.Forms.DockStyle.Right
+        Me.icoResize.Image = Global.WHHS_TSA_Software_Development_2024_2025.My.Resources.Resources.size
+        Me.icoResize.Location = New System.Drawing.Point(288, 0)
+        Me.icoResize.MaximumSize = New System.Drawing.Size(32, 32)
+        Me.icoResize.Name = "icoResize"
+        Me.icoResize.Size = New System.Drawing.Size(32, 32)
+        Me.icoResize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.icoResize.TabIndex = 2
+        Me.icoResize.TabStop = False
         '
         'WidgetOverlay
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Transparent
+        Me.Controls.Add(Me.icoResize)
         Me.Controls.Add(Me.icoMove)
         Me.Controls.Add(Me.icoRemove)
+        Me.MinimumSize = New System.Drawing.Size(352, 256)
         Me.Name = "WidgetOverlay"
-        CType(Me.icoRemove, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Size = New System.Drawing.Size(352, 256)
         CType(Me.icoMove, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.icoRemove, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.icoResize, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
 
     Friend WithEvents icoRemove As PictureBox
     Friend WithEvents icoMove As PictureBox
+    Friend WithEvents icoResize As PictureBox
 End Class

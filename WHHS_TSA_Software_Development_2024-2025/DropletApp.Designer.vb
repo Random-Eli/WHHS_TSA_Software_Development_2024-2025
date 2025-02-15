@@ -35,6 +35,7 @@ Partial Class DropletApp
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MinimumSize = New System.Drawing.Size(800, 400)
         Me.Name = "DropletApp"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Droplet"
         Me.ResumeLayout(False)
 

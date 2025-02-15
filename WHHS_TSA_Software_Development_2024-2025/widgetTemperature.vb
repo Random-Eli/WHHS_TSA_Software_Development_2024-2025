@@ -20,4 +20,5 @@
     Private Sub widgetTemperature_Paint(sender As Object, e As PaintEventArgs) Handles MyBase.Paint
         FillRoundedRectangle(e.Graphics, New Rectangle(0, 0, MyBase.Width, MyBase.Height), 30, New SolidBrush(Color.FromArgb(255, 47, 48, 49)))
     End Sub
+
 End Class

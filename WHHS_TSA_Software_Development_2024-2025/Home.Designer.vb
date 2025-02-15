@@ -37,7 +37,7 @@ Partial Class Home
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(38, Byte), Integer), CType(CType(39, Byte), Integer))
         Me.DoubleBuffered = True
         Me.Name = "Home"
-        Me.Size = New System.Drawing.Size(802, 484)
+        Me.Size = New System.Drawing.Size(800, 400)
         Me.ResumeLayout(False)
 
     End Sub

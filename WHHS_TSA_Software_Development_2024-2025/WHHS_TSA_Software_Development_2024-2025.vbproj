@@ -48,7 +48,7 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>Resources\Droplet_Icon.ico</ApplicationIcon>
+    <ApplicationIcon>Droplet_Icon_-Transparent.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -117,6 +117,12 @@
     <Compile Include="Settings.vb">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="SplashScreen.Designer.vb">
+      <DependentUpon>SplashScreen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SplashScreen.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="ui-sidebar.Designer.vb">
       <DependentUpon>ui-sidebar.vb</DependentUpon>
     </Compile>
@@ -127,12 +133,6 @@
       <DependentUpon>WidgetOverlay.vb</DependentUpon>
     </Compile>
     <Compile Include="WidgetOverlay.vb">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Widgets.Designer.vb">
-      <DependentUpon>Widgets.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Widgets.vb">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="WidgetSelection.Designer.vb">
@@ -172,6 +172,12 @@
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settings.resx">
+      <DependentUpon>Settings.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SplashScreen.resx">
+      <DependentUpon>SplashScreen.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ui-sidebar.resx">
       <DependentUpon>ui-sidebar.vb</DependentUpon>
@@ -257,6 +263,14 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\weather.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\size.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Droplet_Icon_-Transparent.ico" />
+    <None Include="Resources\Droplet_Icon_-Transparent.png" />
+    <None Include="Resources\Droplet_Icon_-Transparent.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

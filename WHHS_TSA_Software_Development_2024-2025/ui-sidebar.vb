@@ -60,12 +60,16 @@
     End Sub
 
     Private Sub icoHome_Click(sender As Object, e As EventArgs) Handles icoHome.Click
-
+        DropletApp.showHomePage()
     End Sub
 
     Private Sub icoWidgets_Click(sender As Object, e As EventArgs) Handles icoWidgets.Click
         DropletApp.showHomePage()
         DropletApp.editWidgets()
         Me.Enabled = False
+    End Sub
+
+    Private Sub icoSettings_Click(sender As Object, e As EventArgs) Handles icoSettings.Click
+        DropletApp.showSettingsPage()
     End Sub
 End Class
