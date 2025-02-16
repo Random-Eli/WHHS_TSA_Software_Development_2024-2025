@@ -269,6 +269,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Droplet_Icon_-Transparent.ico" />
+    <None Include="Resources\lightninganimation.gif" />
     <None Include="Resources\Droplet_Icon_-Transparent.png" />
     <None Include="Resources\Droplet_Icon_-Transparent.ico" />
   </ItemGroup>
