@@ -38,6 +38,9 @@
     End Sub
 
     Public Sub editWidgets()
+
+        Me.BackgroundImage = Nothing
+
         timerEditing.Enabled = True
         saveWidgetsIcon.Visible = True
         addWidgetsIcon.Visible = True

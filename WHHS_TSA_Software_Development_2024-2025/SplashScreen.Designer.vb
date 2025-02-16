@@ -47,7 +47,7 @@ Partial Class SplashScreen
         Me.lblConnecting.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.lblConnecting.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblConnecting.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(249, Byte), Integer), CType(CType(251, Byte), Integer))
-        Me.lblConnecting.Location = New System.Drawing.Point(0, 367)
+        Me.lblConnecting.Location = New System.Drawing.Point(0, 327)
         Me.lblConnecting.Margin = New System.Windows.Forms.Padding(64)
         Me.lblConnecting.Name = "lblConnecting"
         Me.lblConnecting.Size = New System.Drawing.Size(300, 33)
@@ -64,8 +64,8 @@ Partial Class SplashScreen
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(38, Byte), Integer), CType(CType(39, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(300, 400)
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(27, Byte), Integer), CType(CType(28, Byte), Integer), CType(CType(29, Byte), Integer))
+        Me.ClientSize = New System.Drawing.Size(300, 360)
         Me.Controls.Add(Me.lblConnecting)
         Me.Controls.Add(Me.picLogo)
         Me.DoubleBuffered = True
@@ -74,6 +74,8 @@ Partial Class SplashScreen
         Me.Name = "SplashScreen"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Droplet"
+        Me.TopMost = True
+        Me.TransparencyKey = System.Drawing.Color.FromArgb(CType(CType(27, Byte), Integer), CType(CType(28, Byte), Integer), CType(CType(29, Byte), Integer))
         CType(Me.picLogo, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
