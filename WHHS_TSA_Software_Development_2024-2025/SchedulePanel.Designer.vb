@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class SchedulePanel
     Inherits System.Windows.Forms.UserControl
 
     'UserControl overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,14 +20,16 @@ Partial Class SchedulePanel
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.picWaterStatus = New System.Windows.Forms.PictureBox()
+        Me.Panel = New System.Windows.Forms.Panel()
         CType(Me.picWaterStatus, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'picWaterStatus
         '
+        Me.picWaterStatus.Image = Global.WHHS_TSA_Software_Development_2024_2025.My.Resources.Resources.drop_outline
         Me.picWaterStatus.Location = New System.Drawing.Point(32, 32)
         Me.picWaterStatus.Margin = New System.Windows.Forms.Padding(32)
         Me.picWaterStatus.Name = "picWaterStatus"
@@ -35,12 +37,23 @@ Partial Class SchedulePanel
         Me.picWaterStatus.TabIndex = 0
         Me.picWaterStatus.TabStop = False
         '
+        'Panel
+        '
+        Me.Panel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Panel.Location = New System.Drawing.Point(224, 32)
+        Me.Panel.Margin = New System.Windows.Forms.Padding(32)
+        Me.Panel.Name = "Panel"
+        Me.Panel.Size = New System.Drawing.Size(244, 236)
+        Me.Panel.TabIndex = 1
+        '
         'SchedulePanel
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(47, Byte), Integer), CType(CType(48, Byte), Integer), CType(CType(49, Byte), Integer))
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(38, Byte), Integer), CType(CType(39, Byte), Integer))
+        Me.Controls.Add(Me.Panel)
         Me.Controls.Add(Me.picWaterStatus)
+        Me.MinimumSize = New System.Drawing.Size(500, 300)
         Me.Name = "SchedulePanel"
         Me.Size = New System.Drawing.Size(500, 300)
         CType(Me.picWaterStatus, System.ComponentModel.ISupportInitialize).EndInit()
@@ -49,4 +62,5 @@ Partial Class SchedulePanel
     End Sub
 
     Friend WithEvents picWaterStatus As PictureBox
+    Friend WithEvents Panel As Panel
 End Class
