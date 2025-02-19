@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Settings
     Inherits System.Windows.Forms.UserControl
 
     'UserControl overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,10 +20,12 @@ Partial Class Settings
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.lblAPIKey = New System.Windows.Forms.Label()
         Me.txtAPIKey = New System.Windows.Forms.TextBox()
+        Me.lblDegrees = New System.Windows.Forms.Label()
+        Me.Slider1 = New WHHS_TSA_Software_Development_2024_2025.Slider()
         Me.SuspendLayout()
         '
         'lblAPIKey
@@ -32,7 +34,7 @@ Partial Class Settings
         Me.lblAPIKey.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblAPIKey.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(249, Byte), Integer), CType(CType(251, Byte), Integer))
         Me.lblAPIKey.Location = New System.Drawing.Point(96, 32)
-        Me.lblAPIKey.Margin = New System.Windows.Forms.Padding(96, 32, 32, 32)
+        Me.lblAPIKey.Margin = New System.Windows.Forms.Padding(96, 16, 32, 16)
         Me.lblAPIKey.Name = "lblAPIKey"
         Me.lblAPIKey.Size = New System.Drawing.Size(66, 18)
         Me.lblAPIKey.TabIndex = 0
@@ -52,11 +54,33 @@ Partial Class Settings
         Me.txtAPIKey.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         Me.txtAPIKey.WordWrap = False
         '
+        'lblDegrees
+        '
+        Me.lblDegrees.AutoSize = True
+        Me.lblDegrees.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblDegrees.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(249, Byte), Integer), CType(CType(251, Byte), Integer))
+        Me.lblDegrees.Location = New System.Drawing.Point(96, 82)
+        Me.lblDegrees.Margin = New System.Windows.Forms.Padding(96, 16, 32, 16)
+        Me.lblDegrees.Name = "lblDegrees"
+        Me.lblDegrees.Size = New System.Drawing.Size(48, 18)
+        Me.lblDegrees.TabIndex = 2
+        Me.lblDegrees.Text = "F°/C°:"
+        '
+        'Slider1
+        '
+        Me.Slider1.BackColor = System.Drawing.Color.Transparent
+        Me.Slider1.Location = New System.Drawing.Point(197, 82)
+        Me.Slider1.Name = "Slider1"
+        Me.Slider1.Size = New System.Drawing.Size(50, 20)
+        Me.Slider1.TabIndex = 3
+        '
         'Settings
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(38, Byte), Integer), CType(CType(39, Byte), Integer))
+        Me.Controls.Add(Me.Slider1)
+        Me.Controls.Add(Me.lblDegrees)
         Me.Controls.Add(Me.txtAPIKey)
         Me.Controls.Add(Me.lblAPIKey)
         Me.Name = "Settings"
@@ -68,4 +92,6 @@ Partial Class Settings
 
     Friend WithEvents lblAPIKey As Label
     Friend WithEvents txtAPIKey As TextBox
+    Friend WithEvents lblDegrees As Label
+    Friend WithEvents Slider1 As Slider
 End Class

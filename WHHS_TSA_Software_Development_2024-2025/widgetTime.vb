@@ -23,4 +23,8 @@
     Private Sub timerTime_Tick(sender As Object, e As EventArgs) Handles timerTime.Tick
         lblTime.Text = DateTime.Now.ToString("t")
     End Sub
+
+    Private Sub lblTime_Click(sender As Object, e As EventArgs) Handles lblTime.Click
+
+    End Sub
 End Class

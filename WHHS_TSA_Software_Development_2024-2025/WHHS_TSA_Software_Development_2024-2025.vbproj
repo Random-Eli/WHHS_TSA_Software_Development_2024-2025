@@ -117,6 +117,12 @@
     <Compile Include="Settings.vb">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="Slider.Designer.vb">
+      <DependentUpon>Slider.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Slider.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="SplashScreen.Designer.vb">
       <DependentUpon>SplashScreen.vb</DependentUpon>
     </Compile>
@@ -167,6 +173,9 @@
     <EmbeddedResource Include="Home.resx">
       <DependentUpon>Home.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Irrigation.resx">
+      <DependentUpon>Irrigation.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
@@ -175,6 +184,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Settings.resx">
       <DependentUpon>Settings.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Slider.resx">
+      <DependentUpon>Slider.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SplashScreen.resx">
       <DependentUpon>SplashScreen.vb</DependentUpon>
