@@ -28,10 +28,17 @@ Public Class WidgetOverlay
     Private Sub icoResize_MouseMove(sender As Object, e As MouseEventArgs) Handles icoResize.MouseMove
         Dim mousePos As Point = DropletApp.PointToClient(MyBase.MousePosition)
         If MouseButtons.HasFlag(MouseButtons.Left) Then
+
             Me.Size = New Size((((mousePos.X - 96) \ 50) * 50) + 96, (mousePos.Y \ 50) * 50)
             _Widget.Size = New Size((((mousePos.X - 96) \ 50) * 50), (mousePos.Y \ 50) * 50)
+
+
+            If TypeOf _Widget Is widgetWeather Then
+                CType(_Widget, widgetWeather).ResizeGifPanel()
+            End If
         End If
     End Sub
+
 
     Private Sub icoRemove_Click(sender As Object, e As EventArgs) Handles icoRemove.Click
         CType(Me.Parent, Home).removeWidget(Me, _Widget)

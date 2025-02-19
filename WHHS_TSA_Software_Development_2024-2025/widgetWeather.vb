@@ -8,6 +8,7 @@ Public Class widgetWeather
     Private gifBackground As PictureBox
 
     Private Sub widgetWeather_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        ' Change all items to red
 
         gifPanel = New Panel()
         gifPanel.Size = Me.Size
@@ -22,10 +23,13 @@ Public Class widgetWeather
         gifBackground.SizeMode = PictureBoxSizeMode.StretchImage
         gifPanel.Controls.Add(gifBackground)
 
+
         data()
         climateUpdate()
+
     End Sub
     Private Sub ApplyRoundedCorners(ByVal ctrl As Control, ByVal radius As Integer)
+
         Dim path As New GraphicsPath()
         path.AddArc(0, 0, radius, radius, 180, 90)
         path.AddArc(ctrl.Width - radius, 0, radius, radius, 270, 90)
@@ -55,19 +59,62 @@ Public Class widgetWeather
     End Sub
 
     Public Sub data()
-        climate = "Thunder Storm"
+        climate = "Sunny"
     End Sub
 
     Public Sub climateUpdate()
+        Label1.Parent = gifBackground
+        Label2.Parent = gifBackground
+        Label3.Parent = gifBackground
+        lblHumidity.Parent = gifBackground
+        lblWind.Parent = gifBackground
+        lblRain.Parent = gifBackground
+        lblStatus.Parent = gifBackground
+        lblWeather.Parent = gifBackground
+        lblHighInput.Parent = gifBackground
+        lblHigh.Parent = gifBackground
+        lblLow.Parent = gifBackground
+        lblLowInput.Parent = gifBackground
         If climate = "Thunder Storm" Then
             gifBackground.Image = My.Resources.lightninganimation
             gifPanel.Visible = True
             ApplyRoundedCorners(gifPanel, 30)
         ElseIf climate = "Snow" Then
-            'gifBackground.Image = Image.FromFile("C:\Users\bryde\Downloads\snowbg.gif")
+            ChangeForeColor(Me, Color.DarkGray)
+            gifBackground.Image = My.Resources.snowf
+
             gifPanel.Visible = True
             ApplyRoundedCorners(gifPanel, 30)
-            gifPanel.Visible = False
+            gifPanel.Visible = True
+        ElseIf climate = "Sunny" Then
+            ChangeForeColor(Me, Color.White)
+            gifBackground.Image = My.Resources.sunny
+            gifPanel.Visible = True
+            ApplyRoundedCorners(gifPanel, 30)
         End If
     End Sub
+    Public Sub ResizeGifPanel()
+        ' Thank you chat, we solute you
+        ' physc this was ALL ME btw
+        gifPanel.Size = Me.Size
+        gifBackground.Size = Me.Size
+        Dim radius As Integer = Math.Min(Me.Width, Me.Height) / 10  '
+        ApplyRoundedCorners(gifPanel, radius)
+        ApplyRoundedCorners(Me, radius)
+    End Sub
+    Public Sub ChangeForeColor(ByVal parent As Control, ByVal color As Color)
+        For Each ctrl As Control In parent.Controls
+            ' Change the ForeColor if the control supports it
+            If TypeOf ctrl Is Label OrElse TypeOf ctrl Is Button OrElse TypeOf ctrl Is TextBox OrElse TypeOf ctrl Is CheckBox OrElse TypeOf ctrl Is RadioButton Then
+                ctrl.ForeColor = color
+            End If
+
+            ' Recursively apply to child controls (if it's a container like a Panel or GroupBox)
+            If ctrl.HasChildren Then
+                ChangeForeColor(ctrl, color)
+            End If
+        Next
+    End Sub
+
+
 End Class

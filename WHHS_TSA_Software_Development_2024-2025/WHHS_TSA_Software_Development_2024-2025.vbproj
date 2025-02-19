@@ -269,6 +269,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Droplet_Icon_-Transparent.ico" />
+    <None Include="Resources\sunny.gif" />
+    <None Include="Resources\snowf.gif" />
+    <None Include="Resources\snowy1.gif" />
+    <None Include="Resources\snowy.gif" />
+    <None Include="Resources\wind.png" />
+    <None Include="Resources\snowbg.gif" />
     <None Include="Resources\addwidgets.png" />
     <None Include="Resources\lightninganimation.gif" />
     <None Include="Resources\Droplet_Icon_-Transparent.png" />
