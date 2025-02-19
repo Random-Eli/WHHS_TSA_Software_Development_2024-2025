@@ -72,4 +72,8 @@
     Private Sub icoSettings_Click(sender As Object, e As EventArgs) Handles icoSettings.Click
         DropletApp.showSettingsPage()
     End Sub
+
+    Private Sub icoIrrigation_Click(sender As Object, e As EventArgs) Handles icoIrrigation.Click
+        DropletApp.showIrrigationPage()
+    End Sub
 End Class

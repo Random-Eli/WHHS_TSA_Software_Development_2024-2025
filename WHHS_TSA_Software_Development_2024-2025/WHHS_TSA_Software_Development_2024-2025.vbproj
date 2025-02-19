@@ -111,6 +111,12 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="SchedulePanel.Designer.vb">
+      <DependentUpon>SchedulePanel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SchedulePanel.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="Settings.Designer.vb">
       <DependentUpon>Settings.vb</DependentUpon>
     </Compile>
@@ -181,6 +187,9 @@
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SchedulePanel.resx">
+      <DependentUpon>SchedulePanel.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Settings.resx">
       <DependentUpon>Settings.vb</DependentUpon>
@@ -281,6 +290,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Droplet_Icon_-Transparent.ico" />
+    <None Include="Resources\drop-outline.png" />
+    <None Include="Resources\drop.png" />
+    <None Include="Resources\drop-blue.png" />
     <None Include="Resources\addwidgets.png" />
     <None Include="Resources\lightninganimation.gif" />
     <None Include="Resources\Droplet_Icon_-Transparent.png" />

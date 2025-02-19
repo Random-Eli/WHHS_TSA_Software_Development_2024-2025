@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Irrigation
+Partial Class SchedulePanel
     Inherits System.Windows.Forms.UserControl
 
     'UserControl overrides dispose to clean up the component list.
@@ -23,48 +23,30 @@ Partial Class Irrigation
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.picWaterStatus = New System.Windows.Forms.PictureBox()
-        Me.lblWaterStatus = New System.Windows.Forms.Label()
         CType(Me.picWaterStatus, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'picWaterStatus
         '
-        Me.picWaterStatus.Image = Global.WHHS_TSA_Software_Development_2024_2025.My.Resources.Resources.drop
-        Me.picWaterStatus.Location = New System.Drawing.Point(96, 32)
-        Me.picWaterStatus.Margin = New System.Windows.Forms.Padding(96, 32, 0, 32)
+        Me.picWaterStatus.Location = New System.Drawing.Point(32, 32)
+        Me.picWaterStatus.Margin = New System.Windows.Forms.Padding(32)
         Me.picWaterStatus.Name = "picWaterStatus"
-        Me.picWaterStatus.Size = New System.Drawing.Size(64, 64)
-        Me.picWaterStatus.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.picWaterStatus.Size = New System.Drawing.Size(128, 128)
         Me.picWaterStatus.TabIndex = 0
         Me.picWaterStatus.TabStop = False
         '
-        'lblWaterStatus
-        '
-        Me.lblWaterStatus.AutoSize = True
-        Me.lblWaterStatus.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblWaterStatus.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(249, Byte), Integer), CType(CType(251, Byte), Integer))
-        Me.lblWaterStatus.Location = New System.Drawing.Point(168, 55)
-        Me.lblWaterStatus.Margin = New System.Windows.Forms.Padding(8)
-        Me.lblWaterStatus.Name = "lblWaterStatus"
-        Me.lblWaterStatus.Size = New System.Drawing.Size(97, 18)
-        Me.lblWaterStatus.TabIndex = 1
-        Me.lblWaterStatus.Text = "Water Status"
-        '
-        'Irrigation
+        'SchedulePanel
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(38, Byte), Integer), CType(CType(39, Byte), Integer))
-        Me.Controls.Add(Me.lblWaterStatus)
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(47, Byte), Integer), CType(CType(48, Byte), Integer), CType(CType(49, Byte), Integer))
         Me.Controls.Add(Me.picWaterStatus)
-        Me.Name = "Irrigation"
-        Me.Size = New System.Drawing.Size(800, 400)
+        Me.Name = "SchedulePanel"
+        Me.Size = New System.Drawing.Size(500, 300)
         CType(Me.picWaterStatus, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
 
     Friend WithEvents picWaterStatus As PictureBox
-    Friend WithEvents lblWaterStatus As Label
 End Class
