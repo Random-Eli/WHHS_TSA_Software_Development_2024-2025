@@ -126,9 +126,32 @@
   </data>
   <data name="temperature" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\temperature.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="drop" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\drop.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="droplet" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\droplet.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Droplet_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Droplet_Icon.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Droplet_Icon__Transparent" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Droplet_Icon_-Transparent.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Droplet_Icon__Transparent1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Droplet_Icon_-Transparent.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="drop_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\drop-32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="drop_blue" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\drop-blue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="drop_outline" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\drop-outline.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="home" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\home.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="home_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\home-32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>

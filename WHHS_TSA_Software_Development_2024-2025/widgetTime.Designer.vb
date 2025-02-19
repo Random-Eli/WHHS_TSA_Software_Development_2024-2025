@@ -34,6 +34,7 @@ Partial Class widgetTime
         Me.lblTime.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(249, Byte), Integer), CType(CType(251, Byte), Integer))
         Me.lblTime.Location = New System.Drawing.Point(0, 0)
         Me.lblTime.Margin = New System.Windows.Forms.Padding(0)
+        Me.lblTime.MinimumSize = New System.Drawing.Size(256, 256)
         Me.lblTime.Name = "lblTime"
         Me.lblTime.Size = New System.Drawing.Size(256, 256)
         Me.lblTime.TabIndex = 1

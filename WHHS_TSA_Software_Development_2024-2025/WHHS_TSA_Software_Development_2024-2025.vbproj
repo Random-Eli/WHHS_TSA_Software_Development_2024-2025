@@ -111,10 +111,22 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="SchedulePanel.Designer.vb">
+      <DependentUpon>SchedulePanel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SchedulePanel.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="Settings.Designer.vb">
       <DependentUpon>Settings.vb</DependentUpon>
     </Compile>
     <Compile Include="Settings.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Slider.Designer.vb">
+      <DependentUpon>Slider.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Slider.vb">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="SplashScreen.Designer.vb">
@@ -167,14 +179,23 @@
     <EmbeddedResource Include="Home.resx">
       <DependentUpon>Home.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Irrigation.resx">
+      <DependentUpon>Irrigation.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="SchedulePanel.resx">
+      <DependentUpon>SchedulePanel.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Settings.resx">
       <DependentUpon>Settings.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Slider.resx">
+      <DependentUpon>Slider.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SplashScreen.resx">
       <DependentUpon>SplashScreen.vb</DependentUpon>
@@ -275,6 +296,9 @@
     <None Include="Resources\snowy.gif" />
     <None Include="Resources\wind.png" />
     <None Include="Resources\snowbg.gif" />
+    <None Include="Resources\drop-outline.png" />
+    <None Include="Resources\drop.png" />
+    <None Include="Resources\drop-blue.png" />
     <None Include="Resources\addwidgets.png" />
     <None Include="Resources\lightninganimation.gif" />
     <None Include="Resources\Droplet_Icon_-Transparent.png" />
