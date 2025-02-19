@@ -48,7 +48,7 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>Resources\droplet.ico</ApplicationIcon>
+    <ApplicationIcon>Droplet_Icon_-Transparent.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -83,10 +83,23 @@
       <DependentUpon>DropletApp.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Home.Designer.vb">
+      <DependentUpon>Home.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Home.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Irrigation.Designer.vb">
+      <DependentUpon>Irrigation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Irrigation.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
       <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <Compile Include="My Project\Resources.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -98,16 +111,112 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="SchedulePanel.Designer.vb">
+      <DependentUpon>SchedulePanel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SchedulePanel.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Settings.Designer.vb">
+      <DependentUpon>Settings.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Settings.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Slider.Designer.vb">
+      <DependentUpon>Slider.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Slider.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SplashScreen.Designer.vb">
+      <DependentUpon>SplashScreen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SplashScreen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui-sidebar.Designer.vb">
+      <DependentUpon>ui-sidebar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui-sidebar.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WidgetOverlay.Designer.vb">
+      <DependentUpon>WidgetOverlay.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WidgetOverlay.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WidgetSelection.Designer.vb">
+      <DependentUpon>WidgetSelection.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WidgetSelection.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="widgetTemperature.Designer.vb">
+      <DependentUpon>widgetTemperature.vb</DependentUpon>
+    </Compile>
+    <Compile Include="widgetTemperature.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="widgetTime.Designer.vb">
+      <DependentUpon>widgetTime.vb</DependentUpon>
+    </Compile>
+    <Compile Include="widgetTime.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="widgetWeather.Designer.vb">
+      <DependentUpon>widgetWeather.vb</DependentUpon>
+    </Compile>
+    <Compile Include="widgetWeather.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="DropletApp.resx">
       <DependentUpon>DropletApp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Irrigation.resx">
+      <DependentUpon>Irrigation.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SchedulePanel.resx">
+      <DependentUpon>SchedulePanel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settings.resx">
+      <DependentUpon>Settings.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Slider.resx">
+      <DependentUpon>Slider.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SplashScreen.resx">
+      <DependentUpon>SplashScreen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui-sidebar.resx">
+      <DependentUpon>ui-sidebar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WidgetOverlay.resx">
+      <DependentUpon>WidgetOverlay.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WidgetSelection.resx">
+      <DependentUpon>WidgetSelection.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="widgetTemperature.resx">
+      <DependentUpon>widgetTemperature.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="widgetTime.resx">
+      <DependentUpon>widgetTime.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="widgetWeather.resx">
+      <DependentUpon>widgetWeather.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -124,6 +233,76 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\droplet.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\setting.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\setting-52.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home-52.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\setting-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\widget-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\drop-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Droplet_Icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\widget-background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\temperature.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\remove.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\move.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\weather.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\size.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Droplet_Icon_-Transparent.ico" />
+    <None Include="Resources\sunny.gif" />
+    <None Include="Resources\snowf.gif" />
+    <None Include="Resources\snowy1.gif" />
+    <None Include="Resources\snowy.gif" />
+    <None Include="Resources\wind.png" />
+    <None Include="Resources\snowbg.gif" />
+    <None Include="Resources\drop-outline.png" />
+    <None Include="Resources\drop.png" />
+    <None Include="Resources\drop-blue.png" />
+    <None Include="Resources\addwidgets.png" />
+    <None Include="Resources\lightninganimation.gif" />
+    <None Include="Resources\Droplet_Icon_-Transparent.png" />
+    <None Include="Resources\Droplet_Icon_-Transparent.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
